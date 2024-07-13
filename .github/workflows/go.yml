@@ -30,6 +30,7 @@ jobs:
     - name: Build and Push Docker Image
       uses: docker/build-push-action@v6
       with:
+        push: true
         image: mohitpanchariya/go-ci:v1
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
